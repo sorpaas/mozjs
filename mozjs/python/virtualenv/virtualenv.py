@@ -1080,8 +1080,8 @@ def change_prefix(filename, dst_prefix):
                 assert relpath[0] == os.sep
                 relpath = relpath[1:]
             return join(dst_prefix, relpath)
-    assert False, "Filename %s does not start with any of these prefixes: %s" % \
-        (filename, prefixes)
+    # assert False, "Filename %s does not start with any of these prefixes: %s" % \
+    #     (filename, prefixes)
 
 def copy_required_modules(dst_prefix, symlink):
     import imp
